@@ -1,0 +1,41 @@
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+//Функции
+//px to %
+//.title{ font-size: prc(18,24); }
+@function prc($pxOne, $pxTwo) {
+	$result: math.div($pxOne, $pxTwo)*100%;
+	@return $result;
+}
+
+//px to REM
+//.title{ font-size: rem(42); }
+@function rem($px) {
+	$result: math.div($px, $fz) + rem;
+	@return $result;
+}
+
+//px to EM
+//.title{ font-size: em(36); }
+@function em($px) {
+	$result: math.div($px, $fz) + em;
+	@return $result;
+}
+
+//------------------------------------------------------------------------------
+
+//px to EM
+//.title{ font-size: emBase(36,16); }
+@function emBase($px, $pxBASE) {
+	$result: math.div($px, $pxBASE) + em;
+	@return $result;
+}
+
+//calc % of BASE to px
+//.title{ font-size: pxPrcBase( 80, 16 ); }
+@function pxPrcBase( $prc, $pxBASE ) {
+	$result: math.div($pxBASE * $prc, 100) + px;
+	@return $result;
+}

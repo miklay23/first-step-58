@@ -1,0 +1,72 @@
+//Заготовленные классы для выделения ссылок <a> при переходе с клавиатуры (при табуляции)
+//Можно просто скопировать текст из класса и применить ко всем ссылкам
+//------------------------------------------------------------------------------
+	// margin: 0 20px 0 0;
+.focusClass7px {
+	&:focus-visible {
+		box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
+		background: #090;
+		padding: 7px;
+		transform: translate(-7px, 0px);
+		margin: -7px 6px -7px 0px;
+		border-radius: 6px;
+	}
+}
+//------------------
+// изменение отступов
+	// margin: 0 40px 30px 0;
+.focusClass7px {
+	&:focus-visible {
+		box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
+		background: #099;
+		padding: 7px;								//сместит надпись на Apx вправо и вниз
+		transform: translate(-7px, 0px);			//		(смещает сслыку влево на Apx)				()
+		margin: -7px 6px -7px 0px;			//margin:		()				()				()				(0, т.к. вся сслка сместилась влево, и текст начнётся сразу с нужного места)
+		margin: -7px 26px 23px 0px;		//margin:		()				(+20)				(+30)				()
+		border-radius: 6px;
+	}
+}
+//------------------
+.focusClass10px {
+	&:focus-visible {
+		box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
+		background: #090;
+		padding: 10px;
+		transform: translate(-10px, 0px);
+		margin: -10px 0px -10px 0px;
+		border-radius: 10px;
+	}
+}
+.focusClass16px {
+	&:focus-visible {
+		box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
+		background: #090;
+		padding: 16px;
+		transform: translate(-16px, 0px);
+		margin: -16px -12px -16px 0px;
+		border-radius: 16px;
+	}
+}
+.focusClass20px {
+	&:focus-visible {
+		box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.3);
+		background: #090;
+		padding: 20px;
+		transform: translate(-20px, 0px);
+		margin: -20px -20px -20px 0px;
+		border-radius: 20px;
+	}
+}
+//------------------------------------------------------------------------------
+//класс для выделения кнопок
+.focusClass-btn {
+	&:focus-visible {
+		// background: $form-btn-bg-color-hover;
+		box-shadow: 0px 0 8px 4px rgba(0, 0, 0, 0.3);
+		transition: box-shadow 0.0s ease 0s;
+	}
+}
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
